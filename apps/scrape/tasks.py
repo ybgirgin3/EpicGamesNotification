@@ -1,5 +1,5 @@
 import requests
-import json
+import logging
 
 
 class Scraper:
@@ -17,6 +17,7 @@ class Scraper:
         "Referer": "https://store.epicgames.com/en-US/free-games",
         "Referrer-Policy": "no-referrer-when-downgrade"
     }
+    logging.debug(f'url: {url}, headers: {headers}')
 
     def scrape(self) -> dict:
         resp = requests.get(self.url, headers=self.headers).json()
