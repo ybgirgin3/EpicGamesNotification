@@ -1,5 +1,6 @@
 import logging
 import smtplib
+from tabulate import tabulate
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from typing import Optional
@@ -30,15 +31,20 @@ class Mail:
 
     def create_html_body(self):
         # self.email.attach(MIMEText("""\
-        body = """\
+        body = f"""
             <html>
               <body>
                 <p>Hi,<br>
                    How are you?<br>
+                   {self.message}
                    <a href="http://ybgirgin3.github.io">Bekocan personal site</a> 
+                {self.table}
                 </p>
               </body>
             </html>
             """
         logging.debug('body of the mail {}'.format(body))
         return MIMEText(body, "html")
+
+
+

@@ -1,0 +1,927 @@
+{
+  "data": {
+    "Catalog": {
+      "searchStore": {
+        "elements": [
+          {
+            "title": "Borderlands 3 Season Pass",
+            "id": "c3913a91e07b43cfbbbcfd8244c86dcc",
+            "namespace": "catnip",
+            "description": "Continue your Borderlands 3 adventure with the Season Pass, featuring exclusive cosmetic items and four story campaign add-ons with new missions and challenges!",
+            "effectiveDate": "2019-09-11T12:00:00.000Z",
+            "offerType": "DLC",
+            "expiryDate": null,
+            "viewableDate": null,
+            "status": "ACTIVE",
+            "isCodeRedemptionOnly": false,
+            "keyImages": [
+              {
+                "type": "OfferImageWide",
+                "url": "https://cdn1.epicgames.com/offer/catnip/Diesel_productv2_borderlands-3_season-pass_BL3_SEASONPASS_Hero-3840x2160-4411e63a005a43811a2bc516ae7ec584598fd4aa-3840x2160-b8988ebb0f3d9159671e8968af991f30_3840x2160-b8988ebb0f3d9159671e8968af991f30"
+              },
+              {
+                "type": "OfferImageTall",
+                "url": "https://cdn1.epicgames.com/offer/catnip/2KGMKT_BL3_Season_Pass_EGS_1200x1600_1200x1600-a7438a079c5576d328a74b9121278075"
+              },
+              {
+                "type": "CodeRedemption_340x440",
+                "url": "https://cdn1.epicgames.com/offer/catnip/2KGMKT_BL3_Season_Pass_EGS_1200x1600_1200x1600-a7438a079c5576d328a74b9121278075"
+              },
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/offer/catnip/2KGMKT_BL3_Season_Pass_EGS_1200x1600_1200x1600-a7438a079c5576d328a74b9121278075"
+              }
+            ],
+            "seller": {
+              "id": "o-37m6jbj5wcvrcvm4wusv7nazdfvbjk",
+              "name": "2K Games, Inc."
+            },
+            "productSlug": "borderlands-3/season-pass",
+            "urlSlug": "borderlands-3--season-pass",
+            "url": null,
+            "items": [
+              {
+                "id": "e9fdc1a9f47b4a5e8e63841c15de2b12",
+                "namespace": "catnip"
+              },
+              {
+                "id": "fbc46bb6056940d2847ee1e80037a9af",
+                "namespace": "catnip"
+              },
+              {
+                "id": "ff8e1152ddf742b68f9ac0cecd378917",
+                "namespace": "catnip"
+              },
+              {
+                "id": "939e660825764e208938ab4f26b4da56",
+                "namespace": "catnip"
+              },
+              {
+                "id": "4c43a9a691114ccd91c1884ab18f4e27",
+                "namespace": "catnip"
+              },
+              {
+                "id": "3a6a3f9b351b4b599808df3267669b83",
+                "namespace": "catnip"
+              },
+              {
+                "id": "ab030a9f53f3428fb2baf2ddbb0bb5ac",
+                "namespace": "catnip"
+              },
+              {
+                "id": "ff96eef22b0e4c498e8ed80ac0030325",
+                "namespace": "catnip"
+              },
+              {
+                "id": "5021e93a73374d6db1c1ce6c92234f8f",
+                "namespace": "catnip"
+              },
+              {
+                "id": "9c0b1eb3265340678dff0fcb106402b1",
+                "namespace": "catnip"
+              },
+              {
+                "id": "8c826db6e14f44aeac8816e1bd593632",
+                "namespace": "catnip"
+              }
+            ],
+            "customAttributes": [
+              {
+                "key": "com.epicgames.app.blacklist",
+                "value": "SA"
+              },
+              {
+                "key": "publisherName",
+                "value": "2K"
+              },
+              {
+                "key": "developerName",
+                "value": "Gearbox Software"
+              },
+              {
+                "key": "com.epicgames.app.productSlug",
+                "value": "borderlands-3/season-pass"
+              }
+            ],
+            "categories": [
+              {
+                "path": "addons"
+              },
+              {
+                "path": "freegames"
+              },
+              {
+                "path": "addons/durable"
+              },
+              {
+                "path": "applications"
+              }
+            ],
+            "tags": [
+              {
+                "id": "1264"
+              },
+              {
+                "id": "16004"
+              },
+              {
+                "id": "14869"
+              },
+              {
+                "id": "1367"
+              },
+              {
+                "id": "1370"
+              },
+              {
+                "id": "9547"
+              },
+              {
+                "id": "9549"
+              },
+              {
+                "id": "1294"
+              },
+              {
+                "id": "15375"
+              }
+            ],
+            "catalogNs": {
+              "mappings": [
+                {
+                  "pageSlug": "borderlands-3",
+                  "pageType": "productHome"
+                }
+              ]
+            },
+            "offerMappings": [
+              {
+                "pageSlug": "borderlands-3--season-pass",
+                "pageType": "addon--cms-hybrid"
+              }
+            ],
+            "price": {
+              "totalPrice": {
+                "discountPrice": 7770,
+                "originalPrice": 25900,
+                "voucherDiscount": 0,
+                "discount": 18130,
+                "currencyCode": "TRY",
+                "currencyInfo": {
+                  "decimals": 2
+                },
+                "fmtPrice": {
+                  "originalPrice": "TRY 259.00",
+                  "discountPrice": "TRY 77.70",
+                  "intermediatePrice": "TRY 77.70"
+                }
+              },
+              "lineOffers": [
+                {
+                  "appliedRules": [
+                    {
+                      "id": "c3eff977ba49449eaff66f63cf60dafe",
+                      "endDate": "2023-04-20T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "promotions": {
+              "promotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2023-04-06T15:00:00.000Z",
+                      "endDate": "2023-04-20T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 30
+                      }
+                    }
+                  ]
+                }
+              ],
+              "upcomingPromotionalOffers": []
+            }
+          },
+          {
+            "title": "Second Extinction™",
+            "id": "f9daa3f1cd024908a2d8ef404a6b305d",
+            "namespace": "fcd3387b58864614b66952d0430d2b9a",
+            "description": "Big map. Big dinosaurs. Big guns.\nFace an ever changing threat level with your friends.\nSecond Extinction is an online co-op FPS with a bite.",
+            "effectiveDate": "2021-09-30T12:00:00.000Z",
+            "offerType": "BASE_GAME",
+            "expiryDate": null,
+            "viewableDate": "2021-09-30T12:00:00.000Z",
+            "status": "ACTIVE",
+            "isCodeRedemptionOnly": false,
+            "keyImages": [
+              {
+                "type": "OfferImageWide",
+                "url": "https://cdn1.epicgames.com/offer/fcd3387b58864614b66952d0430d2b9a/EGS_SecondExtinction_SystemicReaction_S1_2560x1440-4a9d265c505b45c75b65916c366f5fca"
+              },
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/offer/fcd3387b58864614b66952d0430d2b9a/SE_Epic_Portrait_Product_S2_1200x16001_1200x1600-8a67e373e3462b41f38e61142c103d03"
+              },
+              {
+                "type": "OfferImageTall",
+                "url": "https://cdn1.epicgames.com/offer/fcd3387b58864614b66952d0430d2b9a/SE_Epic_Portrait_Product_S2_1200x16001_1200x1600-8a67e373e3462b41f38e61142c103d03"
+              },
+              {
+                "type": "CodeRedemption_340x440",
+                "url": "https://cdn1.epicgames.com/offer/fcd3387b58864614b66952d0430d2b9a/SE_Epic_Portrait_Product_S2_1200x16001_1200x1600-8a67e373e3462b41f38e61142c103d03"
+              }
+            ],
+            "seller": {
+              "id": "o-4gvyc6bwfz49sqpgk6ylt9g5ddexuy",
+              "name": "Systemic Reaction"
+            },
+            "productSlug": "second-extinction",
+            "urlSlug": "second-extinction",
+            "url": null,
+            "items": [
+              {
+                "id": "03698aa20d7240aaa6aa4f4dbee277ec",
+                "namespace": "fcd3387b58864614b66952d0430d2b9a"
+              }
+            ],
+            "customAttributes": [
+              {
+                "key": "publisherName",
+                "value": "Systemic Reaction™"
+              },
+              {
+                "key": "developerName",
+                "value": "Systemic Reaction™"
+              },
+              {
+                "key": "com.epicgames.app.productSlug",
+                "value": "second-extinction"
+              }
+            ],
+            "categories": [
+              {
+                "path": "freegames"
+              },
+              {
+                "path": "games"
+              },
+              {
+                "path": "games/edition"
+              },
+              {
+                "path": "games/edition/base"
+              },
+              {
+                "path": "applications"
+              }
+            ],
+            "tags": [
+              {
+                "id": "1216"
+              },
+              {
+                "id": "1264"
+              },
+              {
+                "id": "1185"
+              },
+              {
+                "id": "1203"
+              },
+              {
+                "id": "21109"
+              },
+              {
+                "id": "1210"
+              },
+              {
+                "id": "9547"
+              },
+              {
+                "id": "1294"
+              },
+              {
+                "id": "1310"
+              }
+            ],
+            "catalogNs": {
+              "mappings": [
+                {
+                  "pageSlug": "second-extinction",
+                  "pageType": "productHome"
+                }
+              ]
+            },
+            "offerMappings": [],
+            "price": {
+              "totalPrice": {
+                "discountPrice": 4000,
+                "originalPrice": 4000,
+                "voucherDiscount": 0,
+                "discount": 0,
+                "currencyCode": "TRY",
+                "currencyInfo": {
+                  "decimals": 2
+                },
+                "fmtPrice": {
+                  "originalPrice": "TRY 40.00",
+                  "discountPrice": "TRY 40.00",
+                  "intermediatePrice": "TRY 40.00"
+                }
+              },
+              "lineOffers": [
+                {
+                  "appliedRules": []
+                }
+              ]
+            },
+            "promotions": {
+              "promotionalOffers": [],
+              "upcomingPromotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2023-04-13T15:00:00.000Z",
+                      "endDate": "2023-04-20T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 0
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "Dying Light Enhanced Edition",
+            "id": "1126e6bcac0549b0bda00be4a1f69327",
+            "namespace": "2c42520d342a46d7a6e0cfa77b4715de",
+            "description": "Dying Light: Enhanced Edition is all you need to start your adventure in the post-apocalyptic world ruled by zombies. Featuring an expansion with the buggy—your new ride, an additional game mode, two extra quarantine zones, and two bundles.",
+            "effectiveDate": "2022-02-28T15:00:00.000Z",
+            "offerType": "BASE_GAME",
+            "expiryDate": null,
+            "viewableDate": "2022-02-28T15:00:00.000Z",
+            "status": "ACTIVE",
+            "isCodeRedemptionOnly": false,
+            "keyImages": [
+              {
+                "type": "OfferImageTall",
+                "url": "https://cdn1.epicgames.com/offer/2c42520d342a46d7a6e0cfa77b4715de/StoreVertical1200x16001_1200x1600-c3984f399a98d62bc56770577508b890"
+              },
+              {
+                "type": "OfferImageWide",
+                "url": "https://cdn1.epicgames.com/offer/2c42520d342a46d7a6e0cfa77b4715de/StoreHorizontal2560x14401_2560x1440-31926a8652d0c3b888809a778e138a3c"
+              },
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/offer/2c42520d342a46d7a6e0cfa77b4715de/StoreVertical1200x16001_1200x1600-c3984f399a98d62bc56770577508b890"
+              }
+            ],
+            "seller": {
+              "id": "o-2j5hh2gww8vepy62sf9dvqelweczxj",
+              "name": "Techland"
+            },
+            "productSlug": "dying-light",
+            "urlSlug": "dying-light",
+            "url": null,
+            "items": [
+              {
+                "id": "af2b5fdab09e4c3fb372c03c6e67cbfa",
+                "namespace": "2c42520d342a46d7a6e0cfa77b4715de"
+              }
+            ],
+            "customAttributes": [
+              {
+                "key": "com.epicgames.app.blacklist",
+                "value": "DE"
+              },
+              {
+                "key": "com.epicgames.app.productSlug",
+                "value": "dying-light"
+              }
+            ],
+            "categories": [
+              {
+                "path": "freegames"
+              },
+              {
+                "path": "games"
+              },
+              {
+                "path": "games/edition"
+              },
+              {
+                "path": "games/edition/base"
+              },
+              {
+                "path": "applications"
+              }
+            ],
+            "tags": [
+              {
+                "id": "1216"
+              },
+              {
+                "id": "21122"
+              },
+              {
+                "id": "1188"
+              },
+              {
+                "id": "21894"
+              },
+              {
+                "id": "21127"
+              },
+              {
+                "id": "9547"
+              },
+              {
+                "id": "1264"
+              },
+              {
+                "id": "21138"
+              },
+              {
+                "id": "21139"
+              },
+              {
+                "id": "21140"
+              },
+              {
+                "id": "21109"
+              },
+              {
+                "id": "21141"
+              },
+              {
+                "id": "1367"
+              },
+              {
+                "id": "1370"
+              },
+              {
+                "id": "1307"
+              },
+              {
+                "id": "21147"
+              },
+              {
+                "id": "21149"
+              },
+              {
+                "id": "21119"
+              }
+            ],
+            "catalogNs": {
+              "mappings": [
+                {
+                  "pageSlug": "dying-light",
+                  "pageType": "productHome"
+                }
+              ]
+            },
+            "offerMappings": [],
+            "price": {
+              "totalPrice": {
+                "discountPrice": 0,
+                "originalPrice": 5900,
+                "voucherDiscount": 0,
+                "discount": 5900,
+                "currencyCode": "TRY",
+                "currencyInfo": {
+                  "decimals": 2
+                },
+                "fmtPrice": {
+                  "originalPrice": "TRY 59.00",
+                  "discountPrice": "0",
+                  "intermediatePrice": "0"
+                }
+              },
+              "lineOffers": [
+                {
+                  "appliedRules": [
+                    {
+                      "id": "fe55798b0fe5494481e176c2b1eb5963",
+                      "endDate": "2023-04-13T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "promotions": {
+              "promotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2023-04-06T15:00:00.000Z",
+                      "endDate": "2023-04-13T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 0
+                      }
+                    }
+                  ]
+                }
+              ],
+              "upcomingPromotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2023-04-13T15:00:00.000Z",
+                      "endDate": "2023-04-20T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 30
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "shapez",
+            "id": "35f8d25247154fca9b900c13d2be04f6",
+            "namespace": "315e6807f6684c279fc286d0fc36a44f",
+            "description": "shapez is a game about building factories to automate the creation and processing of increasingly complex shapes across an infinitely expanding map.",
+            "effectiveDate": "2022-10-31T12:00:00.000Z",
+            "offerType": "BASE_GAME",
+            "expiryDate": null,
+            "viewableDate": "2022-10-10T14:30:00.000Z",
+            "status": "ACTIVE",
+            "isCodeRedemptionOnly": false,
+            "keyImages": [
+              {
+                "type": "OfferImageWide",
+                "url": "https://cdn1.epicgames.com/spt-assets/6aac3071aeae452990a71aac0a1fbc30/shapez-1iyyz.png"
+              },
+              {
+                "type": "OfferImageTall",
+                "url": "https://cdn1.epicgames.com/spt-assets/6aac3071aeae452990a71aac0a1fbc30/shapez-l0klk.png"
+              },
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/spt-assets/6aac3071aeae452990a71aac0a1fbc30/shapez-l0klk.png"
+              }
+            ],
+            "seller": {
+              "id": "o-vcevjkg64lqrmhwvv95bvgsww28e43",
+              "name": "Prismatika GmbH"
+            },
+            "productSlug": null,
+            "urlSlug": "0d8113dcbf694d3a80870fa4a05fb06d",
+            "url": null,
+            "items": [
+              {
+                "id": "479fbfdb00154730abbb4aa793d81c91",
+                "namespace": "315e6807f6684c279fc286d0fc36a44f"
+              }
+            ],
+            "customAttributes": [
+              {
+                "key": "autoGeneratedPrice",
+                "value": "false"
+              },
+              {
+                "key": "isManuallySetPCReleaseDate",
+                "value": "true"
+              }
+            ],
+            "categories": [
+              {
+                "path": "freegames"
+              },
+              {
+                "path": "games"
+              },
+              {
+                "path": "games/edition"
+              },
+              {
+                "path": "games/edition/base"
+              }
+            ],
+            "tags": [
+              {
+                "id": "1298"
+              },
+              {
+                "id": "1370"
+              },
+              {
+                "id": "9547"
+              }
+            ],
+            "catalogNs": {
+              "mappings": [
+                {
+                  "pageSlug": "shapez-0929c9",
+                  "pageType": "productHome"
+                }
+              ]
+            },
+            "offerMappings": [
+              {
+                "pageSlug": "shapez-0929c9",
+                "pageType": "productHome"
+              }
+            ],
+            "price": {
+              "totalPrice": {
+                "discountPrice": 0,
+                "originalPrice": 2950,
+                "voucherDiscount": 0,
+                "discount": 2950,
+                "currencyCode": "TRY",
+                "currencyInfo": {
+                  "decimals": 2
+                },
+                "fmtPrice": {
+                  "originalPrice": "TRY 29.50",
+                  "discountPrice": "0",
+                  "intermediatePrice": "0"
+                }
+              },
+              "lineOffers": [
+                {
+                  "appliedRules": [
+                    {
+                      "id": "39063775a05349619f42dc71ee3ae530",
+                      "endDate": "2023-04-13T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "promotions": {
+              "promotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2023-04-06T15:00:00.000Z",
+                      "endDate": "2023-04-13T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 0
+                      }
+                    }
+                  ]
+                }
+              ],
+              "upcomingPromotionalOffers": []
+            }
+          },
+          {
+            "title": "MORDHAU",
+            "id": "7f89db821ab1441981adb4daf31c06db",
+            "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
+            "description": "MORDHAU is a multiplayer medieval slasher. Create your mercenary and fight in brutal battles where you will experience fast paced combat, castle sieges, cavalry charges, and more.",
+            "effectiveDate": "2023-04-13T15:00:00.000Z",
+            "offerType": "BASE_GAME",
+            "expiryDate": null,
+            "viewableDate": "2023-04-06T14:55:00.000Z",
+            "status": "ACTIVE",
+            "isCodeRedemptionOnly": false,
+            "keyImages": [
+              {
+                "type": "OfferImageTall",
+                "url": "https://cdn1.epicgames.com/offer/2bda08f9230144a19e98373cc4a6ac2d/EGS_MORDHAU_Triterniondoo_S2_1200x1600-3c795e67d44f02e4127ed4df435560f3"
+              },
+              {
+                "type": "OfferImageWide",
+                "url": "https://cdn1.epicgames.com/offer/2bda08f9230144a19e98373cc4a6ac2d/EGS_MORDHAU_Triterniondoo_S1_2560x1440-572876bb8bcb903e5c33235b7eba8797"
+              },
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/offer/2bda08f9230144a19e98373cc4a6ac2d/EGS_MORDHAU_Triterniondoo_S2_1200x1600-3c795e67d44f02e4127ed4df435560f3"
+              }
+            ],
+            "seller": {
+              "id": "o-tvu5xuu383665htjt4wez2tgl45exq",
+              "name": "Triternion"
+            },
+            "productSlug": "mordhau",
+            "urlSlug": "mordhau",
+            "url": null,
+            "items": [
+              {
+                "id": "7372d6078a3940498d2944ed7bc1e6b2",
+                "namespace": "2bda08f9230144a19e98373cc4a6ac2d"
+              }
+            ],
+            "customAttributes": [
+              {
+                "key": "com.epicgames.app.productSlug",
+                "value": "mordhau"
+              }
+            ],
+            "categories": [
+              {
+                "path": "application"
+              },
+              {
+                "path": "freegames"
+              },
+              {
+                "path": "games"
+              },
+              {
+                "path": "games/edition"
+              },
+              {
+                "path": "games/edition/base"
+              }
+            ],
+            "tags": [
+              {
+                "id": "1216"
+              },
+              {
+                "id": "1203"
+              },
+              {
+                "id": "1299"
+              },
+              {
+                "id": "19847"
+              },
+              {
+                "id": "9547"
+              }
+            ],
+            "catalogNs": {
+              "mappings": [
+                {
+                  "pageSlug": "mordhau",
+                  "pageType": "productHome"
+                }
+              ]
+            },
+            "offerMappings": [],
+            "price": {
+              "totalPrice": {
+                "discountPrice": 22900,
+                "originalPrice": 22900,
+                "voucherDiscount": 0,
+                "discount": 0,
+                "currencyCode": "TRY",
+                "currencyInfo": {
+                  "decimals": 2
+                },
+                "fmtPrice": {
+                  "originalPrice": "TRY 229.00",
+                  "discountPrice": "TRY 229.00",
+                  "intermediatePrice": "TRY 229.00"
+                }
+              },
+              "lineOffers": [
+                {
+                  "appliedRules": []
+                }
+              ]
+            },
+            "promotions": {
+              "promotionalOffers": [],
+              "upcomingPromotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2023-04-13T15:00:00.000Z",
+                      "endDate": "2023-04-20T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 0
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "Dishonored - Definitive Edition",
+            "id": "4d25d74b88d1474a8ab21ffb88ca6d37",
+            "namespace": "d5241c76f178492ea1540fce45616757",
+            "description": "Experience the definitive Dishonored collection. This complete compilation includes Dishonored as well as all of its additional content - Dunwall City Trials, The Knife of Dunwall, The Brigmore Witches and Void Walker’s Arsenal.",
+            "effectiveDate": "2099-01-01T00:00:00.000Z",
+            "offerType": "OTHERS",
+            "expiryDate": null,
+            "viewableDate": "2022-12-28T15:25:00.000Z",
+            "status": "ACTIVE",
+            "isCodeRedemptionOnly": true,
+            "keyImages": [
+              {
+                "type": "VaultClosed",
+                "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/15days-day15-wrapped-desktop-carousel-image_1920x1080-ebecfa7c79f02a9de5bca79560bee953"
+              },
+              {
+                "type": "DieselStoreFrontWide",
+                "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/15days-day15-Unwrapped-desktop-carousel-image1_1920x1080-1992edb42bb8554ddeb14d430ba3f858"
+              },
+              {
+                "type": "DieselStoreFrontTall",
+                "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/DAY15-carousel-mobile-unwrapped-image1_1200x1600-9716d77667d2a82931c55a4e4130989e"
+              }
+            ],
+            "seller": {
+              "id": "o-ufmrk5furrrxgsp5tdngefzt5rxdcn",
+              "name": "Epic Dev Test Account"
+            },
+            "productSlug": "dishonored-definitive-edition",
+            "urlSlug": "mystery-game15",
+            "url": null,
+            "items": [
+              {
+                "id": "8341d7c7e4534db7848cc428aa4cbe5a",
+                "namespace": "d5241c76f178492ea1540fce45616757"
+              }
+            ],
+            "customAttributes": [
+              {
+                "key": "com.epicgames.app.freegames.vault.close",
+                "value": "[]"
+              },
+              {
+                "key": "com.epicgames.app.freegames.vault.slug",
+                "value": "sales-and-specials/holiday-sale"
+              },
+              {
+                "key": "com.epicgames.app.blacklist",
+                "value": "[]"
+              },
+              {
+                "key": "com.epicgames.app.freegames.vault.open",
+                "value": "[]"
+              },
+              {
+                "key": "com.epicgames.app.productSlug",
+                "value": "dishonored-definitive-edition"
+              }
+            ],
+            "categories": [
+              {
+                "path": "freegames/vaulted"
+              },
+              {
+                "path": "freegames"
+              },
+              {
+                "path": "games"
+              },
+              {
+                "path": "applications"
+              }
+            ],
+            "tags": [],
+            "catalogNs": {
+              "mappings": []
+            },
+            "offerMappings": [],
+            "price": {
+              "totalPrice": {
+                "discountPrice": 0,
+                "originalPrice": 0,
+                "voucherDiscount": 0,
+                "discount": 0,
+                "currencyCode": "TRY",
+                "currencyInfo": {
+                  "decimals": 2
+                },
+                "fmtPrice": {
+                  "originalPrice": "0",
+                  "discountPrice": "0",
+                  "intermediatePrice": "0"
+                }
+              },
+              "lineOffers": [
+                {
+                  "appliedRules": []
+                }
+              ]
+            },
+            "promotions": null
+          }
+        ],
+        "paging": {
+          "count": 1000,
+          "total": 6
+        }
+      }
+    }
+  },
+  "extensions": {}
+}
