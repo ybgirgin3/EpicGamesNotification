@@ -130,3 +130,6 @@ dmypy.json
 
 trash
 .idea
+
+# fucking mac stuff
+.DS_Store
