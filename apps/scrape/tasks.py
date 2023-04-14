@@ -30,6 +30,32 @@ class Scraper:
         _extract(data)
 
 
+
+def _extract(data: list[dict]):
+    """
+    :param data:
+    :return:
+    """
+    # ciktigi tarih: viewable data
+    # promotionalOffers:
+    csv_file = open('freegames.csv', 'w', newline='')
+    csv_writer = csv.writer(csv_file)
+    count = 0
+
+    for each in data:
+        if count == 0:
+            _each = _sanitize_data(each)
+            header = _each.keys()
+            csv_writer.writerow(header)
+            count += 1
+
+        _each = _sanitize_data(each)
+        if _each is not None:
+            csv_writer.writerow(_each.values())
+
+    csv_file.close()
+
+
 def _sanitize_data(data: dict):
     original_price = data.get('price', '<unknown_price>').get('totalPrice', '<unknown_price>').get('originalPrice',
                                                                                                    '<unknown_price>')
@@ -60,27 +86,3 @@ def _sanitize_data(data: dict):
             'end_date': end_date
         }
 
-
-def _extract(data: list[dict]):
-    """
-    :param data:
-    :return:
-    """
-    # ciktigi tarih: viewable data
-    # promotionalOffers:
-    csv_file = open('freegames.csv', 'w', newline='')
-    csv_writer = csv.writer(csv_file)
-    count = 0
-
-    for each in data:
-        if count == 0:
-            _each = _sanitize_data(each)
-            header = _each.keys()
-            csv_writer.writerow(header)
-            count += 1
-
-        _each = _sanitize_data(each)
-        if _each is not None:
-            csv_writer.writerow(_each.values())
-
-    csv_file.close()
