@@ -20,7 +20,6 @@ class Scraper:
         "Referer": "https://store.epicgames.com/en-US/free-games",
         "Referrer-Policy": "no-referrer-when-downgrade"
     }
-    logging.debug(f'url: {url}, headers: {headers}')
 
     def scrape(self) -> str:
         resp = requests.get(self.url, headers=self.headers).json()
@@ -34,17 +33,19 @@ def _extract_to_memory(data: list[dict]):
 
     #df = df.reset_index(drop=True)
 
-    print(df.head())
-
     return df
 
 
 
 def _sanitize_data(data: dict):
-    original_price = data.get('price', '<unknown_price>').get('totalPrice', '<unknown_price>').get('originalPrice',
-                                                                                                   '<unknown_price>')
-    discount_price = data.get('price', '<unknown_price>').get('totalPrice', '<unknown_price>').get('discount',
-                                                                                                   '<unknown_price>')
+    original_price = data.get('price', '<unknown_price>')\
+                        .get('totalPrice', '<unknown_price>')\
+                        .get('originalPrice','<unknown_price>')
+
+    discount_price = data.get('price', '<unknown_price>')\
+                         .get('totalPrice', '<unknown_price>')\
+                         .get('discount','<unknown_price>')
+
     product_domain = 'https://store.epicgames.com/en-US/p'
 
     is_free = False

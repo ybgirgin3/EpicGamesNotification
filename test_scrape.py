@@ -9,7 +9,10 @@ class TestScrape(unittest.TestCase):
     def test_scrape(self):
         scraper = Scraper()
         res = scraper.scrape()
-        logging.info(f'output of scrape: {res}')
+        logging.info(f'''
+        output of scrape:
+{res}
+        ''')
         #self.assertIsInstance(res, dict)
 
 

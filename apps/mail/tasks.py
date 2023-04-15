@@ -3,8 +3,10 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from typing import Optional
-import csv
+
 import pandas as pd
+
+import os
 
 
 class Mail:
@@ -19,6 +21,7 @@ class Mail:
     def __init__(self, rec: Optional[list] = None, data: pd.DataFrame = "") -> None:
         # senders will be list reading by db
         self.recipient: str = "ybgirgin3@gmail.com"
+        #self.recipient: str = "is.mahmutcankurt@gmail.com"
         self.data: str = data
 
     def send(self):
@@ -28,11 +31,13 @@ class Mail:
         self.email["Subject"] = self.subject
         # self.email.attach(self.create_html_body())
 
-        self.smtp.starttls()
-        self.smtp.login(self.sender[0], self.sender[1])
-        self.smtp.sendmail(
-            self.sender[0], self.recipient, self.email.as_string())
-        self.smtp.quit()
+        if 'SEND' in os.environ:
+            logging.info('mail sent')
+            self.smtp.starttls()
+            self.smtp.login(self.sender[0], self.sender[1])
+            self.smtp.sendmail(
+                self.sender[0], self.recipient, self.email.as_string())
+            self.smtp.quit()
 
     def create_html_body(self):
         body = f"""
@@ -53,7 +58,6 @@ class Mail:
               </footer>
             </html>
             """
-        logging.debug('body of the mail {}'.format(body))
 
         return MIMEMultipart(
             "alternative", None, [MIMEText(body, 'html')])

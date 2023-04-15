@@ -1,2 +1,2 @@
 import logging
-logging.basicConfig(level=logging.ERROR)
+logging.basicConfig(format='[%(process)d %(levelname)s] %(message)s', level=logging.DEBUG)
