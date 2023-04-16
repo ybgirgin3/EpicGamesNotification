@@ -21,16 +21,19 @@ class Mail:
   def __init__(
       self,
       rec: Optional[list] = None,
-      data: pd.DataFrame = "") -> None:
-    # senders will be list reading by db
-    self.recipient: str = "ybgirgin3@gmail.com"
-    # self.recipient: str = "is.mahmutcankurt@gmail.com"
+      data: pd.DataFrame = ""
+  ) -> None:
+
+    with open('subs.txt') as f:
+      self.recipients = [i.strip()
+                         for i in f.readlines() if not i.startswith('#')]
+
     self.data: str = data
 
   def send(self):
     self.email = self.create_html_body()
     self.email["From"] = self.sender[0]
-    self.email["To"] = self.recipient
+    self.email["To"] = ", ".join(self.recipients)
     self.email["Subject"] = self.subject
     # self.email.attach(self.create_html_body())
 
@@ -40,7 +43,7 @@ class Mail:
       self.smtp.login(self.sender[0], self.sender[1])
       self.smtp.sendmail(
         self.sender[0],
-        self.recipient,
+        self.recipients,
         self.email.as_string())
       self.smtp.quit()
 
@@ -65,3 +68,7 @@ class Mail:
             """
 
     return MIMEMultipart("alternative", None, [MIMEText(body, "html")])
+
+
+def _extract_username_from_email(email: str):
+  return email.split('@')[0]
