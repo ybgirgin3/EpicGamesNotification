@@ -33,7 +33,7 @@ def _extract_to_memory(data: list[dict]):
 
   # df = df.reset_index(drop=True)
 
-  return df
+  return df.sort_values(by='free?')
 
 
 def iso_to_string(date: str):
@@ -63,8 +63,9 @@ def _sanitize_data(data: dict):
       start_date = prom3[0].get('startDate', '<unknown-date>')
       end_date = prom3[0].get('endDate', '<unknown-date>')
 
+    is_free = 'True' if original_price == discount_price else 'False'
+
     return {
-      'free?': 'True' if original_price == discount_price else 'False',
       # 'id': data.get('id', '<unknown_id>'),
       'name': data.get('title', '<unknown_title>'),
       # 'namespace': data.get('namespace', '<unknown_namespace>'),
@@ -73,5 +74,7 @@ def _sanitize_data(data: dict):
       'offer_type': data.get('offerType', '<unknown_offer_type>'),
       'start_date': iso_to_string(start_date),
       'end_date': iso_to_string(end_date),
-      'product_link': f'{product_domain}/{data.get("productSlug")}'
+      'product_link': f'{product_domain}/{data.get("productSlug")}',
+      'price': f'₺ {original_price/100}',
+      'free?': is_free
     }
