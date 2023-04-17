@@ -1,5 +1,6 @@
 # import csv
 import pandas as pd
+from dateutil import parser
 
 import requests
 
@@ -35,6 +36,11 @@ def _extract_to_memory(data: list[dict]):
   return df
 
 
+def iso_to_string(date: str):
+  date = parser.parse(date)
+  return date.strftime('%m/%d/%Y, %H:%M:%S')
+
+
 def _sanitize_data(data: dict):
   original_price = data.get('price', '<unknown_price>')\
     .get('totalPrice', '<unknown_price>')\
@@ -61,11 +67,11 @@ def _sanitize_data(data: dict):
       'free?': 'True' if original_price == discount_price else 'False',
       # 'id': data.get('id', '<unknown_id>'),
       'name': data.get('title', '<unknown_title>'),
-      'namespace': data.get('namespace', '<unknown_namespace>'),
+      # 'namespace': data.get('namespace', '<unknown_namespace>'),
       # 'description': data.get('description', '<unknown_description>').replace('\n', ' '),
-      'game_release_date': data.get('effectiveDate', '<unknown_game_release_date>'),
+      'game_release_date': iso_to_string(data.get('effectiveDate', '<unknown_game_release_date>')),
       'offer_type': data.get('offerType', '<unknown_offer_type>'),
-      'start_date': start_date,
-      'end_date': end_date,
+      'start_date': iso_to_string(start_date),
+      'end_date': iso_to_string(end_date),
       'product_link': f'{product_domain}/{data.get("productSlug")}'
     }

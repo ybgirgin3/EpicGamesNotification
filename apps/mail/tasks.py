@@ -1,12 +1,11 @@
-import logging
-import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from typing import Optional
+import smtplib
+import logging
+import time
 
 import pandas as pd
-
-import os
 
 
 class Mail:
@@ -16,7 +15,7 @@ class Mail:
   # email = MIMEMultipart("alternative")
   smtp = smtplib.SMTP("smtp-mail.outlook.com", port=587)
 
-  logging.debug(f"sender: {sender}, subject: {subject}, message: {message}")
+  logging.debug(f"sender: {sender[0]}, subject: {subject}, message: {message}")
 
   def __init__(
       self,
@@ -24,37 +23,38 @@ class Mail:
       data: pd.DataFrame = ""
   ) -> None:
 
-    with open('subs.txt') as f:
-      self.recipients = [i.strip()
-                         for i in f.readlines() if not i.startswith('#')]
-
     self.data: str = data
+    with open('subs.txt') as f:
+      self.recipients = [
+        i.strip() for i in f.readlines()
+        if not i.startswith('#')
+      ]
 
   def send(self):
+    self.smtp.starttls()
+    self.smtp.login(self.sender[0], self.sender[1])
     self.email = self.create_html_body()
-    self.email["From"] = self.sender[0]
-    self.email["To"] = ", ".join(self.recipients)
-    self.email["Subject"] = self.subject
-    # self.email.attach(self.create_html_body())
 
-    if "SEND" in os.environ:
-      logging.info("mail sent")
-      self.smtp.starttls()
-      self.smtp.login(self.sender[0], self.sender[1])
+    for rec in self.recipients:
+      self.email["From"] = self.sender[0]
+      self.email["To"] = rec
+      self.email["Subject"] = self.subject
+
+      logging.info(f"mail sent, rec: {rec}")
       self.smtp.sendmail(
         self.sender[0],
-        self.recipients,
+        rec,
         self.email.as_string())
-      self.smtp.quit()
+      time.sleep(2)
+    self.smtp.quit()
 
   def create_html_body(self):
     body = f"""
             <html>
               <body>
-                <p>Hi,<br>
-                   How are you?<br>
+                <p>Hi!, How are you?<br>
                    You weekly Epic Games Reminder Is Here
-                {self.data.to_html()}
+                {self.data.to_html(na_rep = "", index = False).replace("<th>","<th style = 'background-color: gray; color: white; text-align: center'>").replace("<td>","<td style = 'text-align: start; padding: 10px;'>")}
                 <br>
                </p>
               </body>
@@ -68,7 +68,3 @@ class Mail:
             """
 
     return MIMEMultipart("alternative", None, [MIMEText(body, "html")])
-
-
-def _extract_username_from_email(email: str):
-  return email.split('@')[0]
