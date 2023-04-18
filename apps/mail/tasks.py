@@ -1,21 +1,27 @@
+import pandas as pd
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from typing import Optional
 import smtplib
 import logging
 import time
+import json
 
-import pandas as pd
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 class Mail:
-  sender = ("epicfreegamesreminder@outlook.com", "/P_VK5sH!SCi4#f")
+  sender = json.loads(open('.credentials.json').read())
+  print('sender:', sender)
   subject = "Free Epic Games Reminder"
   message = "You weekly Epic Games Reminder Is Here;"
   # email = MIMEMultipart("alternative")
   smtp = smtplib.SMTP("smtp-mail.outlook.com", port=587)
 
-  logging.debug(f"sender: {sender[0]}, subject: {subject}, message: {message}")
+  logging.debug(
+    f"sender: {sender['EMAIL']}, subject: {subject}, message: {message}")
 
   def __init__(
       self,
@@ -32,17 +38,17 @@ class Mail:
 
   def send(self):
     self.smtp.starttls()
-    self.smtp.login(self.sender[0], self.sender[1])
+    self.smtp.login(self.sender['EMAIL'], self.sender['PASSWORD'])
     self.email = self.create_html_body()
 
     for rec in self.recipients:
-      self.email["From"] = self.sender[0]
+      self.email["From"] = self.sender['EMAIL']
       self.email["To"] = rec
       self.email["Subject"] = self.subject
 
       logging.info(f"mail sent, rec: {rec}")
       self.smtp.sendmail(
-        self.sender[0],
+        self.sender['EMAIL'],
         rec,
         self.email.as_string())
       time.sleep(2)
