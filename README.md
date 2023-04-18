@@ -16,6 +16,8 @@
   }
   ```
 
+  - add receivers email to subs.txt file
+
 **for test run (after complete previous step);**
 
 ```sh
