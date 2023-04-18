@@ -133,3 +133,5 @@ trash
 
 # fucking mac stuff
 .DS_Store
+
+.credentials.json
