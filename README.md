@@ -1,6 +1,6 @@
-# Epic Games Reminder
+# EpicGames Free Games Alert
 
-## Mail Sender app for weekly epic games free games
+## Mail Sender app for weekly epicgames free games
 
 **to make it work;**
 
