@@ -6,17 +6,17 @@
 
 - create an outlook account
 - create a .credentials.json file
+- add receivers email address
 
   schema of needed file:
 
   ```json
   {
-      "EMAIL": "<your-outlook-account-email>",
-      "PASSWORD": "<your-outlook-account-password>"
+    "EMAIL": "<your-outlook-account-email>",
+    "PASSWORD": "<your-outlook-account-password>"
+    "RECEIVERS": ["123@gmail.com","asd@gmail.com", "qwe456@hotmail.com"]
   }
   ```
-
-  - add receivers email to subs.txt file
 
 **for test run (after complete previous step);**
 
