@@ -12,7 +12,7 @@
   ```json
   {
       "EMAIL": "<your-outlook-account-email>",
-      "PASSWORD": "<your-outlook-account-password>:
+      "PASSWORD": "<your-outlook-account-password>"
   }
   ```
 
