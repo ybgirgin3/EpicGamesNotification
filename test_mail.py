@@ -5,14 +5,14 @@ from apps.scrape.tasks import Scraper
 
 
 class TestMail(unittest.TestCase):
-  def test_mail(self):
-    # get data
-    scraper = Scraper()
-    res = scraper.scrape()
+  scraper = Scraper()
+  m = Mail()
 
+  def test_mail(self):
     # send mail
-    m = Mail(data=res)
-    m.send()
+    self.m.send(
+      data=self.scraper.scrape()
+    )
 
 
 if __name__ == "__main__":

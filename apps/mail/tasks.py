@@ -1,4 +1,3 @@
-import pandas as pd
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import smtplib
@@ -21,17 +20,10 @@ class Mail:
   logging.debug(
     f"sender: {config['EMAIL']}, subject: {subject}, message: {message}")
 
-  def __init__(
-      self,
-      data: pd.DataFrame = ""
-  ) -> None:
-
-    self.data: str = data
-
-  def send(self):
+  def send(self, data):
     self.smtp.starttls()
     self.smtp.login(self.config['EMAIL'], self.config['PASSWORD'])
-    self.email = self.create_html_body()
+    self.email = self.create_html_body(data)
 
     for rec in self.config['RECEIVERS']:
       self.email["From"] = self.config['EMAIL']
@@ -46,13 +38,13 @@ class Mail:
       time.sleep(2)
     self.smtp.quit()
 
-  def create_html_body(self):
+  def create_html_body(self, data):
     body = f"""
             <html>
               <body>
                 <p>Hi!, How are you?<br>
                    You weekly Epic Games Reminder Is Here
-                {self.data.to_html(na_rep = "", index = False).replace("<th>","<th style = 'background-color: gray; color: white; text-align: center'>").replace("<td>","<td style = 'text-align: start; padding: 10px;'>")}
+                {data.to_html(na_rep = "", index = False).replace("<th>","<th style = 'background-color: gray; color: white; text-align: center'>").replace("<td>","<td style = 'text-align: start; padding: 10px;'>")}
                 <br>
                </p>
               </body>
