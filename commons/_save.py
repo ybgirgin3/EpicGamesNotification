@@ -13,9 +13,9 @@ class _save:
       # create dir
       path = os.path.join(
         os.path.join(
-          os.path.expanduser('~'),
-          'Documents'),
-        f'scraper.output.{datetime.datetime.now().strftime("%Y_%m_%d__%H_%M_%S")}.csv')
+          tempfile.gettempdir(),
+          f'scraper.output.{datetime.datetime.now().strftime("%Y_%m_%d__%H_%M_%S")}.csv')
+      )
       logging.info(path)
 
       data.to_csv(path)

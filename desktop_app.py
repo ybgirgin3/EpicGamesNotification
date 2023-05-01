@@ -10,7 +10,7 @@ from commons._save import _save
 from commons._mail import _mail
 from commons._scrape import _scrape
 
-from utils.utils import notify
+from utils.utils import notify, open_file
 
 rumps.debug_mode(True)
 
@@ -36,8 +36,6 @@ class EpicReminder:
   #mail = Mail()
 
   def __init__(self):
-    # def toggle_button(self, sender):
-    #  sender.state = not sender.state
 
     self.config = {
       "app_name": "EpicReminder",
@@ -53,13 +51,18 @@ class EpicReminder:
     self.set_up_menu()
 
     # Options
+    # sub
+    self.save_button_jr = rumps.MenuItem('Just Save', callback=self.save_local)
+    self.open_directly_button = rumps.MenuItem(
+      'Open Directly', callback=self._open)
+
+    # main
     self.start_button = rumps.MenuItem(
-      title=self.config['start'], callback=self.start)
+      title=self.config['start'], callback=self.start, key='e')
     self.send_mail_button = rumps.MenuItem(
       title=self.config['mail'], callback=self.send_mail)
     self.save_button = rumps.MenuItem(
-      title=self.config['notif'],
-      callback=self.save_local)
+      self.config['notif']), (self.save_button_jr, self.open_directly_button)
 
     self.app.menu = [
       self.start_button,
@@ -79,13 +82,16 @@ class EpicReminder:
         _notification(
           _type='mail',
           message='Your Free Games Alert Sent To Your Mail')
-    if self.save_button.state:
+    if self.save_button_jr.state:
       ret = _save._save(data)
       if ret[0]:
         _notification(
           _type='save',
           path=ret[1],
           message=f'You Free Games File Saved to {ret[1]}')
+      if self.open_directly_button.state:
+        print('OPENING FILE')
+        open_file(ret[1])
 
     logging.info(data)
 
@@ -94,6 +100,10 @@ class EpicReminder:
 
   def save_local(self, sender):
     sender.state = not sender.state
+
+  def _open(self, sender):
+    sender.state = not sender.state
+    self.save_button_jr.state = True
 
   def run(self):
     self.app.run()
