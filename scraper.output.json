@@ -1,0 +1,58 @@
+{
+  "name": {
+    "0": "Breathedge",
+    "1": "Horizon Chase Turbo",
+    "2": "Kao the Kangaroo",
+    "3": "Poker Club",
+    "4": "Against All Odds"
+  },
+  "game_release_date": {
+    "0": "02\/25\/2021, 18:00:00",
+    "1": "06\/24\/2021, 15:00:00",
+    "2": "05\/27\/2022, 13:00:00",
+    "3": "04\/27\/2023, 15:00:00",
+    "4": "05\/04\/2023, 15:00:00"
+  },
+  "offer_type": {
+    "0": "BASE_GAME",
+    "1": "BASE_GAME",
+    "2": "BASE_GAME",
+    "3": "BASE_GAME",
+    "4": "BASE_GAME"
+  },
+  "start_date": {
+    "0": "04\/27\/2023, 15:00:00",
+    "1": "05\/04\/2023, 15:00:00",
+    "2": "05\/04\/2023, 15:00:00",
+    "3": "04\/27\/2023, 15:00:00",
+    "4": "05\/04\/2023, 15:00:00"
+  },
+  "end_date": {
+    "0": "05\/04\/2023, 15:00:00",
+    "1": "05\/11\/2023, 15:00:00",
+    "2": "05\/11\/2023, 15:00:00",
+    "3": "05\/04\/2023, 15:00:00",
+    "4": "05\/11\/2023, 15:00:00"
+  },
+  "product_link": {
+    "0": "https:\/\/store.epicgames.com\/en-US\/p\/breathedge",
+    "1": "https:\/\/store.epicgames.com\/en-US\/p\/horizon-chase-turbo",
+    "2": "https:\/\/store.epicgames.com\/en-US\/p\/kao-the-kangaroo-62abe3",
+    "3": "https:\/\/store.epicgames.com\/en-US\/p\/poker-club-6e18ee",
+    "4": "https:\/\/store.epicgames.com\/en-US\/p\/against-all-odds-409105"
+  },
+  "price": {
+    "0": "\u20ba 299.0",
+    "1": "\u20ba 39.0",
+    "2": "\u20ba 300.0",
+    "3": "\u20ba 33.0",
+    "4": "\u20ba 0.0"
+  },
+  "free?": {
+    "0": "True",
+    "1": "False",
+    "2": "False",
+    "3": "True",
+    "4": "True"
+  }
+}

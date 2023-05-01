@@ -1,8 +1,17 @@
 # import csv
-import pandas as pd
 from dateutil import parser
-
 import requests
+import json
+import logging
+
+import pandas as pd
+
+# print all of df table in logging table
+pd.set_option('expand_frame_repr', False)
+pd.set_option('display.max_columns', 999)
+
+
+config = json.loads(open('.credentials.json').read())
 
 
 class Scraper:
@@ -20,7 +29,7 @@ class Scraper:
     "Referer": "https://store.epicgames.com/en-US/free-games",
     "Referrer-Policy": "no-referrer-when-downgrade"}
 
-  def scrape(self) -> str:
+  def scrape(self) -> pd.DataFrame:
     resp = requests.get(self.url, headers=self.headers).json()
     return _extract_to_memory(resp.get('data').get(
       'Catalog').get('searchStore').get('elements'))
@@ -31,9 +40,13 @@ def _extract_to_memory(data: list[dict]):
   df = pd.DataFrame.from_dict(san)
   df.columns = [k for k, v in san[0].items()]
 
-  # df = df.reset_index(drop=True)
+  ret = df.sort_values(by='free?')
 
-  return df.sort_values(by='free?')
+  if config.get('EXPORT', 0) == 1:
+    logging.debug('exporting as json')
+    df.to_json('scraper.output.json')
+
+  return ret
 
 
 def iso_to_string(date: str):
@@ -42,13 +55,13 @@ def iso_to_string(date: str):
 
 
 def _sanitize_data(data: dict):
-  original_price = data.get('price', '<unknown_price>')\
-    .get('totalPrice', '<unknown_price>')\
+  original_price = data.get('price', '<unknown_price>') \
+    .get('totalPrice', '<unknown_price>') \
     .get('originalPrice', '<unknown_price>')
 
-  discount_price = data.get('price', '<unknown_price>')\
-                       .get('totalPrice', '<unknown_price>')\
-                       .get('discount', '<unknown_price>')
+  discount_price = data.get('price', '<unknown_price>') \
+    .get('totalPrice', '<unknown_price>') \
+    .get('discount', '<unknown_price>')
 
   product_domain = 'https://store.epicgames.com/en-US/p'
 
@@ -65,6 +78,12 @@ def _sanitize_data(data: dict):
 
     is_free = 'True' if original_price == discount_price else 'False'
 
+    slug = data.get('productSlug', None)
+    if slug is None:  # if slug is none look for offerMappings:
+      slug = data.get('offerMappings')[0].get('pageSlug', None)
+
+    product_link = f'{product_domain}/{slug}' if slug is not None else 'https://store.epicgames.com/en-US/'
+
     return {
       # 'id': data.get('id', '<unknown_id>'),
       'name': data.get('title', '<unknown_title>'),
@@ -74,7 +93,7 @@ def _sanitize_data(data: dict):
       'offer_type': data.get('offerType', '<unknown_offer_type>'),
       'start_date': iso_to_string(start_date),
       'end_date': iso_to_string(end_date),
-      'product_link': f'{product_domain}/{data.get("productSlug")}',
-      'price': f'₺ {original_price/100}',
+      'product_link': product_link,
+      'price': f'₺ {original_price / 100}',
       'free?': is_free
     }

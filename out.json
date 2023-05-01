@@ -141,9 +141,6 @@
               },
               {
                 "id": "1294"
-              },
-              {
-                "id": "15375"
               }
             ],
             "catalogNs": {
@@ -162,26 +159,166 @@
             ],
             "price": {
               "totalPrice": {
-                "discountPrice": 7770,
+                "discountPrice": 25900,
                 "originalPrice": 25900,
                 "voucherDiscount": 0,
-                "discount": 18130,
+                "discount": 0,
                 "currencyCode": "TRY",
                 "currencyInfo": {
                   "decimals": 2
                 },
                 "fmtPrice": {
                   "originalPrice": "TRY 259.00",
-                  "discountPrice": "TRY 77.70",
-                  "intermediatePrice": "TRY 77.70"
+                  "discountPrice": "TRY 259.00",
+                  "intermediatePrice": "TRY 259.00"
+                }
+              },
+              "lineOffers": [
+                {
+                  "appliedRules": []
+                }
+              ]
+            },
+            "promotions": null
+          },
+          {
+            "title": "Breathedge",
+            "id": "8401414902e84f2cb9afa9142f051d32",
+            "namespace": "08ae29e4f70a4b62aa055e383381aa82",
+            "description": "Survive in outer space! Together with your immortal chicken, discover the truth behind your sudden spaceship crash. Craft tools, pilot vehicles, and even control space stations to survive and explore the wreckage.",
+            "effectiveDate": "2021-02-25T18:00:00.000Z",
+            "offerType": "BASE_GAME",
+            "expiryDate": null,
+            "viewableDate": "2021-02-09T17:00:00.000Z",
+            "status": "ACTIVE",
+            "isCodeRedemptionOnly": false,
+            "keyImages": [
+              {
+                "type": "OfferImageWide",
+                "url": "https://cdn1.epicgames.com/08ae29e4f70a4b62aa055e383381aa82/offer/egs-breathedge-redruinssoftworks-s1-2560x1440-76fd08cd9c2d-2560x1440-783424f6d4a7f32a0e75fc074f2f928e.jpg"
+              },
+              {
+                "type": "DieselStoreFrontWide",
+                "url": "https://cdn1.epicgames.com/08ae29e4f70a4b62aa055e383381aa82/offer/egs-breathedge-redruinssoftworks-s1-2560x1440-76fd08cd9c2d-2560x1440-783424f6d4a7f32a0e75fc074f2f928e.jpg"
+              },
+              {
+                "type": "OfferImageTall",
+                "url": "https://cdn1.epicgames.com/08ae29e4f70a4b62aa055e383381aa82/offer/EGS_Breathedge_RedRuinsSoftworks_S2-1200x1600-c0559585221ea11c9d48273c3a79b1ba.jpg"
+              },
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/08ae29e4f70a4b62aa055e383381aa82/offer/EGS_Breathedge_RedRuinsSoftworks_S2-1200x1600-c0559585221ea11c9d48273c3a79b1ba.jpg"
+              },
+              {
+                "type": "CodeRedemption_340x440",
+                "url": "https://cdn1.epicgames.com/08ae29e4f70a4b62aa055e383381aa82/offer/EGS_Breathedge_RedRuinsSoftworks_S2-1200x1600-c0559585221ea11c9d48273c3a79b1ba.jpg"
+              },
+              {
+                "type": "DieselStoreFrontTall",
+                "url": "https://cdn1.epicgames.com/08ae29e4f70a4b62aa055e383381aa82/offer/EGS_Breathedge_RedRuinsSoftworks_S2-1200x1600-c0559585221ea11c9d48273c3a79b1ba.jpg"
+              }
+            ],
+            "seller": {
+              "id": "o-p9883lvrpllhyd7sad6tgxv53mdyh5",
+              "name": "Hypetrain Digital"
+            },
+            "productSlug": "breathedge",
+            "urlSlug": "osmiumgeneralaudience",
+            "url": null,
+            "items": [
+              {
+                "id": "a07c7f65867e435dac277e0284e19a5a",
+                "namespace": "08ae29e4f70a4b62aa055e383381aa82"
+              }
+            ],
+            "customAttributes": [
+              {
+                "key": "publisherName",
+                "value": "HypeTrain Digital"
+              },
+              {
+                "key": "developerName",
+                "value": "RedRuins Softworks"
+              },
+              {
+                "key": "com.epicgames.app.productSlug",
+                "value": "breathedge"
+              }
+            ],
+            "categories": [
+              {
+                "path": "freegames"
+              },
+              {
+                "path": "games"
+              },
+              {
+                "path": "games/edition"
+              },
+              {
+                "path": "games/edition/base"
+              },
+              {
+                "path": "applications"
+              }
+            ],
+            "tags": [
+              {
+                "id": "1216"
+              },
+              {
+                "id": "1281"
+              },
+              {
+                "id": "22737"
+              },
+              {
+                "id": "21894"
+              },
+              {
+                "id": "1080"
+              },
+              {
+                "id": "1370"
+              },
+              {
+                "id": "9547"
+              },
+              {
+                "id": "9549"
+              }
+            ],
+            "catalogNs": {
+              "mappings": [
+                {
+                  "pageSlug": "breathedge",
+                  "pageType": "productHome"
+                }
+              ]
+            },
+            "offerMappings": [],
+            "price": {
+              "totalPrice": {
+                "discountPrice": 0,
+                "originalPrice": 29900,
+                "voucherDiscount": 0,
+                "discount": 29900,
+                "currencyCode": "TRY",
+                "currencyInfo": {
+                  "decimals": 2
+                },
+                "fmtPrice": {
+                  "originalPrice": "TRY 299.00",
+                  "discountPrice": "0",
+                  "intermediatePrice": "0"
                 }
               },
               "lineOffers": [
                 {
                   "appliedRules": [
                     {
-                      "id": "c3eff977ba49449eaff66f63cf60dafe",
-                      "endDate": "2023-04-20T15:00:00.000Z",
+                      "id": "9d3dd9c0a783420fa3346c1eb9b01935",
+                      "endDate": "2023-05-04T15:00:00.000Z",
                       "discountSetting": {
                         "discountType": "PERCENTAGE"
                       }
@@ -195,11 +332,11 @@
                 {
                   "promotionalOffers": [
                     {
-                      "startDate": "2023-04-06T15:00:00.000Z",
-                      "endDate": "2023-04-20T15:00:00.000Z",
+                      "startDate": "2023-04-27T15:00:00.000Z",
+                      "endDate": "2023-05-04T15:00:00.000Z",
                       "discountSetting": {
                         "discountType": "PERCENTAGE",
-                        "discountPercentage": 30
+                        "discountPercentage": 0
                       }
                     }
                   ]
@@ -209,202 +346,67 @@
             }
           },
           {
-            "title": "Second Extinction™",
-            "id": "f9daa3f1cd024908a2d8ef404a6b305d",
-            "namespace": "fcd3387b58864614b66952d0430d2b9a",
-            "description": "Big map. Big dinosaurs. Big guns.\nFace an ever changing threat level with your friends.\nSecond Extinction is an online co-op FPS with a bite.",
-            "effectiveDate": "2021-09-30T12:00:00.000Z",
+            "title": "Horizon Chase Turbo",
+            "id": "58a2b650955f4920876afe86dfb563c1",
+            "namespace": "253d451b16364a22907dd01b7e928fb6",
+            "description": "Horizon Chase Turbo is a racing game inspired by the great hits of the 80's and 90's. It recreates the classic arcade gameplay with unbound speed limits of fun. Full throttle on and enjoy!",
+            "effectiveDate": "2021-06-24T15:00:00.000Z",
             "offerType": "BASE_GAME",
             "expiryDate": null,
-            "viewableDate": "2021-09-30T12:00:00.000Z",
+            "viewableDate": "2021-06-17T14:25:00.000Z",
             "status": "ACTIVE",
             "isCodeRedemptionOnly": false,
             "keyImages": [
-              {
-                "type": "OfferImageWide",
-                "url": "https://cdn1.epicgames.com/offer/fcd3387b58864614b66952d0430d2b9a/EGS_SecondExtinction_SystemicReaction_S1_2560x1440-4a9d265c505b45c75b65916c366f5fca"
-              },
-              {
-                "type": "Thumbnail",
-                "url": "https://cdn1.epicgames.com/offer/fcd3387b58864614b66952d0430d2b9a/SE_Epic_Portrait_Product_S2_1200x16001_1200x1600-8a67e373e3462b41f38e61142c103d03"
-              },
-              {
-                "type": "OfferImageTall",
-                "url": "https://cdn1.epicgames.com/offer/fcd3387b58864614b66952d0430d2b9a/SE_Epic_Portrait_Product_S2_1200x16001_1200x1600-8a67e373e3462b41f38e61142c103d03"
-              },
               {
                 "type": "CodeRedemption_340x440",
-                "url": "https://cdn1.epicgames.com/offer/fcd3387b58864614b66952d0430d2b9a/SE_Epic_Portrait_Product_S2_1200x16001_1200x1600-8a67e373e3462b41f38e61142c103d03"
-              }
-            ],
-            "seller": {
-              "id": "o-4gvyc6bwfz49sqpgk6ylt9g5ddexuy",
-              "name": "Systemic Reaction"
-            },
-            "productSlug": "second-extinction",
-            "urlSlug": "second-extinction",
-            "url": null,
-            "items": [
-              {
-                "id": "03698aa20d7240aaa6aa4f4dbee277ec",
-                "namespace": "fcd3387b58864614b66952d0430d2b9a"
-              }
-            ],
-            "customAttributes": [
-              {
-                "key": "publisherName",
-                "value": "Systemic Reaction™"
+                "url": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_HorizonChaseTurbo_AQUIRIS_S2_1200x1600-7b51e6b8f8cf6ebd50f5fb77be96ad9d"
               },
               {
-                "key": "developerName",
-                "value": "Systemic Reaction™"
+                "type": "DieselStoreFrontTall",
+                "url": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_HorizonChaseTurbo_AQUIRIS_S2_1200x1600-7b51e6b8f8cf6ebd50f5fb77be96ad9d"
               },
               {
-                "key": "com.epicgames.app.productSlug",
-                "value": "second-extinction"
-              }
-            ],
-            "categories": [
-              {
-                "path": "freegames"
+                "type": "DieselStoreFrontWide",
+                "url": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_HorizonChaseTurbo_AQUIRIS_S1_2560x1440-1e6041993df289505da364dfe77dd561"
               },
-              {
-                "path": "games"
-              },
-              {
-                "path": "games/edition"
-              },
-              {
-                "path": "games/edition/base"
-              },
-              {
-                "path": "applications"
-              }
-            ],
-            "tags": [
-              {
-                "id": "1216"
-              },
-              {
-                "id": "1264"
-              },
-              {
-                "id": "1185"
-              },
-              {
-                "id": "1203"
-              },
-              {
-                "id": "21109"
-              },
-              {
-                "id": "1210"
-              },
-              {
-                "id": "9547"
-              },
-              {
-                "id": "1294"
-              },
-              {
-                "id": "1310"
-              }
-            ],
-            "catalogNs": {
-              "mappings": [
-                {
-                  "pageSlug": "second-extinction",
-                  "pageType": "productHome"
-                }
-              ]
-            },
-            "offerMappings": [],
-            "price": {
-              "totalPrice": {
-                "discountPrice": 4000,
-                "originalPrice": 4000,
-                "voucherDiscount": 0,
-                "discount": 0,
-                "currencyCode": "TRY",
-                "currencyInfo": {
-                  "decimals": 2
-                },
-                "fmtPrice": {
-                  "originalPrice": "TRY 40.00",
-                  "discountPrice": "TRY 40.00",
-                  "intermediatePrice": "TRY 40.00"
-                }
-              },
-              "lineOffers": [
-                {
-                  "appliedRules": []
-                }
-              ]
-            },
-            "promotions": {
-              "promotionalOffers": [],
-              "upcomingPromotionalOffers": [
-                {
-                  "promotionalOffers": [
-                    {
-                      "startDate": "2023-04-13T15:00:00.000Z",
-                      "endDate": "2023-04-20T15:00:00.000Z",
-                      "discountSetting": {
-                        "discountType": "PERCENTAGE",
-                        "discountPercentage": 0
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "title": "Dying Light Enhanced Edition",
-            "id": "1126e6bcac0549b0bda00be4a1f69327",
-            "namespace": "2c42520d342a46d7a6e0cfa77b4715de",
-            "description": "Dying Light: Enhanced Edition is all you need to start your adventure in the post-apocalyptic world ruled by zombies. Featuring an expansion with the buggy—your new ride, an additional game mode, two extra quarantine zones, and two bundles.",
-            "effectiveDate": "2022-02-28T15:00:00.000Z",
-            "offerType": "BASE_GAME",
-            "expiryDate": null,
-            "viewableDate": "2022-02-28T15:00:00.000Z",
-            "status": "ACTIVE",
-            "isCodeRedemptionOnly": false,
-            "keyImages": [
               {
                 "type": "OfferImageTall",
-                "url": "https://cdn1.epicgames.com/offer/2c42520d342a46d7a6e0cfa77b4715de/StoreVertical1200x16001_1200x1600-c3984f399a98d62bc56770577508b890"
+                "url": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_HorizonChaseTurbo_AQUIRIS_S2_1200x1600-7b51e6b8f8cf6ebd50f5fb77be96ad9d"
               },
               {
                 "type": "OfferImageWide",
-                "url": "https://cdn1.epicgames.com/offer/2c42520d342a46d7a6e0cfa77b4715de/StoreHorizontal2560x14401_2560x1440-31926a8652d0c3b888809a778e138a3c"
+                "url": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_HorizonChaseTurbo_AQUIRIS_S1_2560x1440-1e6041993df289505da364dfe77dd561"
               },
               {
                 "type": "Thumbnail",
-                "url": "https://cdn1.epicgames.com/offer/2c42520d342a46d7a6e0cfa77b4715de/StoreVertical1200x16001_1200x1600-c3984f399a98d62bc56770577508b890"
+                "url": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_HorizonChaseTurbo_AQUIRIS_S2_1200x1600-7b51e6b8f8cf6ebd50f5fb77be96ad9d"
               }
             ],
             "seller": {
-              "id": "o-2j5hh2gww8vepy62sf9dvqelweczxj",
-              "name": "Techland"
+              "id": "o-9vdp6e5ydhtqt23utprf59f8hg45se",
+              "name": "AQUIRIS"
             },
-            "productSlug": "dying-light",
-            "urlSlug": "dying-light",
+            "productSlug": "horizon-chase-turbo",
+            "urlSlug": "lutetiumgeneralaudience",
             "url": null,
             "items": [
               {
-                "id": "af2b5fdab09e4c3fb372c03c6e67cbfa",
-                "namespace": "2c42520d342a46d7a6e0cfa77b4715de"
+                "id": "c5b7c792f9314d75a2508ec298a9e3b7",
+                "namespace": "253d451b16364a22907dd01b7e928fb6"
               }
             ],
             "customAttributes": [
               {
                 "key": "com.epicgames.app.blacklist",
-                "value": "DE"
+                "value": "[]"
+              },
+              {
+                "key": "publisherName",
+                "value": "AQUIRIS"
               },
               {
                 "key": "com.epicgames.app.productSlug",
-                "value": "dying-light"
+                "value": "horizon-chase-turbo"
               }
             ],
             "categories": [
@@ -419,35 +421,38 @@
               },
               {
                 "path": "games/edition/base"
-              },
-              {
-                "path": "applications"
               }
             ],
             "tags": [
               {
-                "id": "1216"
-              },
-              {
-                "id": "21122"
+                "id": "21121"
               },
               {
                 "id": "1188"
               },
               {
+                "id": "21125"
+              },
+              {
                 "id": "21894"
               },
               {
-                "id": "21127"
+                "id": "19847"
               },
               {
                 "id": "9547"
               },
               {
-                "id": "1264"
+                "id": "1263"
+              },
+              {
+                "id": "21136"
               },
               {
                 "id": "21138"
+              },
+              {
+                "id": "1299"
               },
               {
                 "id": "21139"
@@ -456,22 +461,10 @@
                 "id": "21140"
               },
               {
-                "id": "21109"
-              },
-              {
                 "id": "21141"
               },
               {
-                "id": "1367"
-              },
-              {
-                "id": "1370"
-              },
-              {
-                "id": "1307"
-              },
-              {
-                "id": "21147"
+                "id": "1212"
               },
               {
                 "id": "21149"
@@ -483,7 +476,7 @@
             "catalogNs": {
               "mappings": [
                 {
-                  "pageSlug": "dying-light",
+                  "pageSlug": "horizon-chase-turbo",
                   "pageType": "productHome"
                 }
               ]
@@ -491,58 +484,37 @@
             "offerMappings": [],
             "price": {
               "totalPrice": {
-                "discountPrice": 0,
-                "originalPrice": 5900,
+                "discountPrice": 3900,
+                "originalPrice": 3900,
                 "voucherDiscount": 0,
-                "discount": 5900,
+                "discount": 0,
                 "currencyCode": "TRY",
                 "currencyInfo": {
                   "decimals": 2
                 },
                 "fmtPrice": {
-                  "originalPrice": "TRY 59.00",
-                  "discountPrice": "0",
-                  "intermediatePrice": "0"
+                  "originalPrice": "TRY 39.00",
+                  "discountPrice": "TRY 39.00",
+                  "intermediatePrice": "TRY 39.00"
                 }
               },
               "lineOffers": [
                 {
-                  "appliedRules": [
-                    {
-                      "id": "fe55798b0fe5494481e176c2b1eb5963",
-                      "endDate": "2023-04-13T15:00:00.000Z",
-                      "discountSetting": {
-                        "discountType": "PERCENTAGE"
-                      }
-                    }
-                  ]
+                  "appliedRules": []
                 }
               ]
             },
             "promotions": {
-              "promotionalOffers": [
-                {
-                  "promotionalOffers": [
-                    {
-                      "startDate": "2023-04-06T15:00:00.000Z",
-                      "endDate": "2023-04-13T15:00:00.000Z",
-                      "discountSetting": {
-                        "discountType": "PERCENTAGE",
-                        "discountPercentage": 0
-                      }
-                    }
-                  ]
-                }
-              ],
+              "promotionalOffers": [],
               "upcomingPromotionalOffers": [
                 {
                   "promotionalOffers": [
                     {
-                      "startDate": "2023-04-13T15:00:00.000Z",
-                      "endDate": "2023-04-20T15:00:00.000Z",
+                      "startDate": "2023-05-04T15:00:00.000Z",
+                      "endDate": "2023-05-11T15:00:00.000Z",
                       "discountSetting": {
                         "discountType": "PERCENTAGE",
-                        "discountPercentage": 30
+                        "discountPercentage": 0
                       }
                     }
                   ]
@@ -551,41 +523,41 @@
             }
           },
           {
-            "title": "shapez",
-            "id": "35f8d25247154fca9b900c13d2be04f6",
-            "namespace": "315e6807f6684c279fc286d0fc36a44f",
-            "description": "shapez is a game about building factories to automate the creation and processing of increasingly complex shapes across an infinitely expanding map.",
-            "effectiveDate": "2022-10-31T12:00:00.000Z",
+            "title": "Kao the Kangaroo",
+            "id": "8fa0a4d003dc4e7fb2c9125e17693280",
+            "namespace": "3bbc147c5f134b7cab059cb2b3bb0dd7",
+            "description": "Embark on an epic journey, master magical gloves, explore lush environments and take Kao through his most grand tale yet!",
+            "effectiveDate": "2022-05-27T13:00:00.000Z",
             "offerType": "BASE_GAME",
             "expiryDate": null,
-            "viewableDate": "2022-10-10T14:30:00.000Z",
+            "viewableDate": "2022-05-13T13:00:00.000Z",
             "status": "ACTIVE",
             "isCodeRedemptionOnly": false,
             "keyImages": [
               {
                 "type": "OfferImageWide",
-                "url": "https://cdn1.epicgames.com/spt-assets/6aac3071aeae452990a71aac0a1fbc30/shapez-1iyyz.png"
+                "url": "https://cdn1.epicgames.com/spt-assets/4a2dcb55ecca496aaaf328f60263bb56/kao-the-kangaroo-offer-5k0vx.jpg"
               },
               {
                 "type": "OfferImageTall",
-                "url": "https://cdn1.epicgames.com/spt-assets/6aac3071aeae452990a71aac0a1fbc30/shapez-l0klk.png"
+                "url": "https://cdn1.epicgames.com/spt-assets/4a2dcb55ecca496aaaf328f60263bb56/download-kao-the-kangaroo-offer-7wgw8.jpg"
               },
               {
                 "type": "Thumbnail",
-                "url": "https://cdn1.epicgames.com/spt-assets/6aac3071aeae452990a71aac0a1fbc30/shapez-l0klk.png"
+                "url": "https://cdn1.epicgames.com/spt-assets/4a2dcb55ecca496aaaf328f60263bb56/download-kao-the-kangaroo-offer-7wgw8.jpg"
               }
             ],
             "seller": {
-              "id": "o-vcevjkg64lqrmhwvv95bvgsww28e43",
-              "name": "Prismatika GmbH"
+              "id": "o-jryv47hwccq9qf7cya65lg9wz4sk33",
+              "name": "Tate Multimedia"
             },
             "productSlug": null,
-            "urlSlug": "0d8113dcbf694d3a80870fa4a05fb06d",
+            "urlSlug": "232747cb897b400dbbef9799432e7817",
             "url": null,
             "items": [
               {
-                "id": "479fbfdb00154730abbb4aa793d81c91",
-                "namespace": "315e6807f6684c279fc286d0fc36a44f"
+                "id": "9006c937d7094f3bb18c569e93a9e29b",
+                "namespace": "3bbc147c5f134b7cab059cb2b3bb0dd7"
               }
             ],
             "customAttributes": [
@@ -596,6 +568,10 @@
               {
                 "key": "isManuallySetPCReleaseDate",
                 "value": "true"
+              },
+              {
+                "key": "isBlockchainUsed",
+                "value": "false"
               }
             ],
             "categories": [
@@ -614,41 +590,203 @@
             ],
             "tags": [
               {
-                "id": "1298"
+                "id": "1296"
+              },
+              {
+                "id": "21894"
+              },
+              {
+                "id": "1336"
               },
               {
                 "id": "1370"
               },
               {
                 "id": "9547"
+              },
+              {
+                "id": "9549"
+              },
+              {
+                "id": "1151"
               }
             ],
             "catalogNs": {
               "mappings": [
                 {
-                  "pageSlug": "shapez-0929c9",
+                  "pageSlug": "kao-the-kangaroo-62abe3",
                   "pageType": "productHome"
                 }
               ]
             },
             "offerMappings": [
               {
-                "pageSlug": "shapez-0929c9",
+                "pageSlug": "kao-the-kangaroo-62abe3",
+                "pageType": "productHome"
+              }
+            ],
+            "price": {
+              "totalPrice": {
+                "discountPrice": 30000,
+                "originalPrice": 30000,
+                "voucherDiscount": 0,
+                "discount": 0,
+                "currencyCode": "TRY",
+                "currencyInfo": {
+                  "decimals": 2
+                },
+                "fmtPrice": {
+                  "originalPrice": "TRY 300.00",
+                  "discountPrice": "TRY 300.00",
+                  "intermediatePrice": "TRY 300.00"
+                }
+              },
+              "lineOffers": [
+                {
+                  "appliedRules": []
+                }
+              ]
+            },
+            "promotions": {
+              "promotionalOffers": [],
+              "upcomingPromotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2023-05-04T15:00:00.000Z",
+                      "endDate": "2023-05-11T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 0
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "title": "Poker Club",
+            "id": "b18baf5b2a18423493139ef9974dbbe3",
+            "namespace": "a0149619255648e8af0993a17ef4ee8e",
+            "description": "Welcome to the most immersive poker simulation ever made. Live the life of a poker pro in a global Poker Tour, then join a Club and make a name for yourself in 200-player online tournaments.",
+            "effectiveDate": "2023-04-27T15:00:00.000Z",
+            "offerType": "BASE_GAME",
+            "expiryDate": null,
+            "viewableDate": "2023-04-20T15:00:00.000Z",
+            "status": "ACTIVE",
+            "isCodeRedemptionOnly": false,
+            "keyImages": [
+              {
+                "type": "OfferImageWide",
+                "url": "https://cdn1.epicgames.com/spt-assets/560813614bba464385b56f43524d17f0/poker-club-offer-2b7to.jpg"
+              },
+              {
+                "type": "OfferImageTall",
+                "url": "https://cdn1.epicgames.com/spt-assets/560813614bba464385b56f43524d17f0/download-poker-club-offer-16wlj.jpg"
+              },
+              {
+                "type": "Thumbnail",
+                "url": "https://cdn1.epicgames.com/spt-assets/560813614bba464385b56f43524d17f0/download-poker-club-offer-16wlj.jpg"
+              }
+            ],
+            "seller": {
+              "id": "o-fbx9l7z95axq9s73trhbttadbareuq",
+              "name": "Ripstone Ltd"
+            },
+            "productSlug": null,
+            "urlSlug": "227fefdce66b4a6c84ccc877bb42659b",
+            "url": null,
+            "items": [
+              {
+                "id": "0074198fc19b411d966e2044a5aed922",
+                "namespace": "a0149619255648e8af0993a17ef4ee8e"
+              }
+            ],
+            "customAttributes": [
+              {
+                "key": "autoGeneratedPrice",
+                "value": "false"
+              },
+              {
+                "key": "isManuallySetViewableDate",
+                "value": "true"
+              },
+              {
+                "key": "isManuallySetPCReleaseDate",
+                "value": "true"
+              },
+              {
+                "key": "isBlockchainUsed",
+                "value": "false"
+              }
+            ],
+            "categories": [
+              {
+                "path": "freegames"
+              },
+              {
+                "path": "games"
+              },
+              {
+                "path": "games/edition"
+              },
+              {
+                "path": "games/edition/base"
+              }
+            ],
+            "tags": [
+              {
+                "id": "1296"
+              },
+              {
+                "id": "1393"
+              },
+              {
+                "id": "1203"
+              },
+              {
+                "id": "1283"
+              },
+              {
+                "id": "19847"
+              },
+              {
+                "id": "1370"
+              },
+              {
+                "id": "9547"
+              },
+              {
+                "id": "9549"
+              }
+            ],
+            "catalogNs": {
+              "mappings": [
+                {
+                  "pageSlug": "poker-club-6e18ee",
+                  "pageType": "productHome"
+                }
+              ]
+            },
+            "offerMappings": [
+              {
+                "pageSlug": "poker-club-6e18ee",
                 "pageType": "productHome"
               }
             ],
             "price": {
               "totalPrice": {
                 "discountPrice": 0,
-                "originalPrice": 2950,
+                "originalPrice": 3300,
                 "voucherDiscount": 0,
-                "discount": 2950,
+                "discount": 3300,
                 "currencyCode": "TRY",
                 "currencyInfo": {
                   "decimals": 2
                 },
                 "fmtPrice": {
-                  "originalPrice": "TRY 29.50",
+                  "originalPrice": "TRY 33.00",
                   "discountPrice": "0",
                   "intermediatePrice": "0"
                 }
@@ -657,8 +795,8 @@
                 {
                   "appliedRules": [
                     {
-                      "id": "39063775a05349619f42dc71ee3ae530",
-                      "endDate": "2023-04-13T15:00:00.000Z",
+                      "id": "ced387417ad34727bd69a9d701476783",
+                      "endDate": "2023-05-04T15:00:00.000Z",
                       "discountSetting": {
                         "discountType": "PERCENTAGE"
                       }
@@ -672,8 +810,8 @@
                 {
                   "promotionalOffers": [
                     {
-                      "startDate": "2023-04-06T15:00:00.000Z",
-                      "endDate": "2023-04-13T15:00:00.000Z",
+                      "startDate": "2023-04-27T15:00:00.000Z",
+                      "endDate": "2023-05-04T15:00:00.000Z",
                       "discountSetting": {
                         "discountType": "PERCENTAGE",
                         "discountPercentage": 0
@@ -686,53 +824,62 @@
             }
           },
           {
-            "title": "MORDHAU",
-            "id": "7f89db821ab1441981adb4daf31c06db",
-            "namespace": "2bda08f9230144a19e98373cc4a6ac2d",
-            "description": "MORDHAU is a multiplayer medieval slasher. Create your mercenary and fight in brutal battles where you will experience fast paced combat, castle sieges, cavalry charges, and more.",
-            "effectiveDate": "2023-04-13T15:00:00.000Z",
+            "title": "Against All Odds",
+            "id": "5b99274688e9465aa9d5ca5cea176cfd",
+            "namespace": "676a89b2e8344c9db39a79724150cba6",
+            "description": "Water's cut. Rent's due. Jobs are scarce. Time to get rich. Enter the Slaughter League and win against all the odds in a dizzying array of lethal multiplayer races. In this competitive, multiplayer platformer party game there can only be one winner, so kiss friendships goodbye!",
+            "effectiveDate": "2023-05-04T15:00:00.000Z",
             "offerType": "BASE_GAME",
             "expiryDate": null,
-            "viewableDate": "2023-04-06T14:55:00.000Z",
+            "viewableDate": "2022-01-20T17:00:00.000Z",
             "status": "ACTIVE",
             "isCodeRedemptionOnly": false,
             "keyImages": [
               {
-                "type": "OfferImageTall",
-                "url": "https://cdn1.epicgames.com/offer/2bda08f9230144a19e98373cc4a6ac2d/EGS_MORDHAU_Triterniondoo_S2_1200x1600-3c795e67d44f02e4127ed4df435560f3"
+                "type": "OfferImageWide",
+                "url": "https://cdn1.epicgames.com/spt-assets/a2f2a8a46ff648928b50bcc776bf9857/slaughter-league-offer-3kel0.jpg"
               },
               {
-                "type": "OfferImageWide",
-                "url": "https://cdn1.epicgames.com/offer/2bda08f9230144a19e98373cc4a6ac2d/EGS_MORDHAU_Triterniondoo_S1_2560x1440-572876bb8bcb903e5c33235b7eba8797"
+                "type": "OfferImageTall",
+                "url": "https://cdn1.epicgames.com/spt-assets/a2f2a8a46ff648928b50bcc776bf9857/download-slaughter-league-offer-16b3l.jpg"
               },
               {
                 "type": "Thumbnail",
-                "url": "https://cdn1.epicgames.com/offer/2bda08f9230144a19e98373cc4a6ac2d/EGS_MORDHAU_Triterniondoo_S2_1200x1600-3c795e67d44f02e4127ed4df435560f3"
+                "url": "https://cdn1.epicgames.com/spt-assets/a2f2a8a46ff648928b50bcc776bf9857/download-slaughter-league-offer-16b3l.jpg"
               }
             ],
             "seller": {
-              "id": "o-tvu5xuu383665htjt4wez2tgl45exq",
-              "name": "Triternion"
+              "id": "o-rlswgtffm6ua68662gd37xv3lmq95q",
+              "name": "Freedom Games"
             },
-            "productSlug": "mordhau",
-            "urlSlug": "mordhau",
+            "productSlug": null,
+            "urlSlug": "08c6f52b510c40fbaff84ffcee6052a4",
             "url": null,
             "items": [
               {
-                "id": "7372d6078a3940498d2944ed7bc1e6b2",
-                "namespace": "2bda08f9230144a19e98373cc4a6ac2d"
+                "id": "2d238bafe5ea474e9334e2dc41455a53",
+                "namespace": "676a89b2e8344c9db39a79724150cba6"
               }
             ],
             "customAttributes": [
               {
-                "key": "com.epicgames.app.productSlug",
-                "value": "mordhau"
+                "key": "autoGeneratedPrice",
+                "value": "false"
+              },
+              {
+                "key": "isManuallySetViewableDate",
+                "value": "true"
+              },
+              {
+                "key": "isManuallySetPCReleaseDate",
+                "value": "false"
+              },
+              {
+                "key": "isBlockchainUsed",
+                "value": "false"
               }
             ],
             "categories": [
-              {
-                "path": "application"
-              },
               {
                 "path": "freegames"
               },
@@ -751,146 +898,44 @@
                 "id": "1216"
               },
               {
+                "id": "1264"
+              },
+              {
                 "id": "1203"
+              },
+              {
+                "id": "1283"
               },
               {
                 "id": "1299"
               },
               {
-                "id": "19847"
+                "id": "1370"
               },
               {
                 "id": "9547"
+              },
+              {
+                "id": "9549"
+              },
+              {
+                "id": "1263"
               }
             ],
             "catalogNs": {
               "mappings": [
                 {
-                  "pageSlug": "mordhau",
+                  "pageSlug": "against-all-odds-409105",
                   "pageType": "productHome"
                 }
               ]
             },
-            "offerMappings": [],
-            "price": {
-              "totalPrice": {
-                "discountPrice": 22900,
-                "originalPrice": 22900,
-                "voucherDiscount": 0,
-                "discount": 0,
-                "currencyCode": "TRY",
-                "currencyInfo": {
-                  "decimals": 2
-                },
-                "fmtPrice": {
-                  "originalPrice": "TRY 229.00",
-                  "discountPrice": "TRY 229.00",
-                  "intermediatePrice": "TRY 229.00"
-                }
-              },
-              "lineOffers": [
-                {
-                  "appliedRules": []
-                }
-              ]
-            },
-            "promotions": {
-              "promotionalOffers": [],
-              "upcomingPromotionalOffers": [
-                {
-                  "promotionalOffers": [
-                    {
-                      "startDate": "2023-04-13T15:00:00.000Z",
-                      "endDate": "2023-04-20T15:00:00.000Z",
-                      "discountSetting": {
-                        "discountType": "PERCENTAGE",
-                        "discountPercentage": 0
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "title": "Dishonored - Definitive Edition",
-            "id": "4d25d74b88d1474a8ab21ffb88ca6d37",
-            "namespace": "d5241c76f178492ea1540fce45616757",
-            "description": "Experience the definitive Dishonored collection. This complete compilation includes Dishonored as well as all of its additional content - Dunwall City Trials, The Knife of Dunwall, The Brigmore Witches and Void Walker’s Arsenal.",
-            "effectiveDate": "2099-01-01T00:00:00.000Z",
-            "offerType": "OTHERS",
-            "expiryDate": null,
-            "viewableDate": "2022-12-28T15:25:00.000Z",
-            "status": "ACTIVE",
-            "isCodeRedemptionOnly": true,
-            "keyImages": [
+            "offerMappings": [
               {
-                "type": "VaultClosed",
-                "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/15days-day15-wrapped-desktop-carousel-image_1920x1080-ebecfa7c79f02a9de5bca79560bee953"
-              },
-              {
-                "type": "DieselStoreFrontWide",
-                "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/15days-day15-Unwrapped-desktop-carousel-image1_1920x1080-1992edb42bb8554ddeb14d430ba3f858"
-              },
-              {
-                "type": "DieselStoreFrontTall",
-                "url": "https://cdn1.epicgames.com/offer/d5241c76f178492ea1540fce45616757/DAY15-carousel-mobile-unwrapped-image1_1200x1600-9716d77667d2a82931c55a4e4130989e"
+                "pageSlug": "against-all-odds-409105",
+                "pageType": "productHome"
               }
             ],
-            "seller": {
-              "id": "o-ufmrk5furrrxgsp5tdngefzt5rxdcn",
-              "name": "Epic Dev Test Account"
-            },
-            "productSlug": "dishonored-definitive-edition",
-            "urlSlug": "mystery-game15",
-            "url": null,
-            "items": [
-              {
-                "id": "8341d7c7e4534db7848cc428aa4cbe5a",
-                "namespace": "d5241c76f178492ea1540fce45616757"
-              }
-            ],
-            "customAttributes": [
-              {
-                "key": "com.epicgames.app.freegames.vault.close",
-                "value": "[]"
-              },
-              {
-                "key": "com.epicgames.app.freegames.vault.slug",
-                "value": "sales-and-specials/holiday-sale"
-              },
-              {
-                "key": "com.epicgames.app.blacklist",
-                "value": "[]"
-              },
-              {
-                "key": "com.epicgames.app.freegames.vault.open",
-                "value": "[]"
-              },
-              {
-                "key": "com.epicgames.app.productSlug",
-                "value": "dishonored-definitive-edition"
-              }
-            ],
-            "categories": [
-              {
-                "path": "freegames/vaulted"
-              },
-              {
-                "path": "freegames"
-              },
-              {
-                "path": "games"
-              },
-              {
-                "path": "applications"
-              }
-            ],
-            "tags": [],
-            "catalogNs": {
-              "mappings": []
-            },
-            "offerMappings": [],
             "price": {
               "totalPrice": {
                 "discountPrice": 0,
@@ -913,7 +958,23 @@
                 }
               ]
             },
-            "promotions": null
+            "promotions": {
+              "promotionalOffers": [],
+              "upcomingPromotionalOffers": [
+                {
+                  "promotionalOffers": [
+                    {
+                      "startDate": "2023-05-04T15:00:00.000Z",
+                      "endDate": "2023-05-11T15:00:00.000Z",
+                      "discountSetting": {
+                        "discountType": "PERCENTAGE",
+                        "discountPercentage": 0
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
           }
         ],
         "paging": {

@@ -13,6 +13,7 @@ class TestScrape(unittest.TestCase):
         output of scrape:
 {res}
         ''')
+    print(res)
     # self.assertIsInstance(res, dict)
 
 
