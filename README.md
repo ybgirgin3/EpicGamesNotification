@@ -33,6 +33,6 @@
 
 
 ** desktop app
-<img src='docs/images/desktopapp.png'/>
+<img src='docs/images/desktopapp.jpg'/>
 
 
