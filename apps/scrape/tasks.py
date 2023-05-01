@@ -1,8 +1,6 @@
-# import csv
 from dateutil import parser
 import requests
 import json
-import logging
 
 import pandas as pd
 
@@ -42,9 +40,9 @@ def _extract_to_memory(data: list[dict]):
 
   ret = df.sort_values(by='free?')
 
-  if config.get('EXPORT', 0) == 1:
-    logging.debug('exporting as json')
-    df.to_json('scraper.output.json')
+  # if config.get('EXPORT', 0) == 1:
+  #  logging.debug('exporting as json')
+  #  df.to_json('scraper.output.json')
 
   return ret
 

@@ -28,5 +28,11 @@
 
 - I use outlook because, we can not use gmail to send mail for free anymore. We need business account for create a mail sender bot (a.k.a: no unsecure apps anymore)
 
-mail example: <br>
+** mail example: <br>
 <img src='docs/images/mail.png'/>
+
+
+** desktop app
+<img src='docs/images/desktopapp.png'/>
+
+
