@@ -1,22 +1,20 @@
-import rumps
 import logging
 
-from pprint import pprint
+import rumps
 
-#from apps.scrape.tasks import Scraper
-#from apps.mail.tasks import Mail
-
-from commons._save import _save
 from commons._mail import _mail
+from commons._save import _save
 from commons._scrape import _scrape
-
 from utils.utils import notify, open_file
+
+# from apps.scrape.tasks import Scraper
+# from apps.mail.tasks import Mail
 
 rumps.debug_mode(True)
 
 
 def _notification(_type: str, **kwargs: dict):
-  #subtitle = 'Data {"Saved" if _type = "save" else "Sent"}'
+  # subtitle = 'Data {"Saved" if _type = "save" else "Sent"}'
   subtitle = 'Process Done..'
 
   notify(
@@ -32,8 +30,8 @@ def _notification(_type: str, **kwargs: dict):
 
 
 class EpicReminder:
-  #scraper = Scraper()
-  #mail = Mail()
+  # scraper = Scraper()
+  # mail = Mail()
 
   def __init__(self):
 
@@ -74,7 +72,7 @@ class EpicReminder:
     self.app.icon = 'docs/Epic-Games-logo.png'
 
   def start(self, _):
-    #data = self.scraper.scrape()
+    # data = self.scraper.scrape()
     data = _scrape._scrape()
     if self.send_mail_button.state:
       ret = _mail._mail(data)
