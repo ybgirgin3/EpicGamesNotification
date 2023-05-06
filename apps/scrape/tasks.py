@@ -1,13 +1,14 @@
-from dateutil import parser
-import requests
+import datetime
 import json
 
 import pandas as pd
+import requests
+from dateutil import parser
+from dateutil import tz
 
 # print all of df table in logging table
 pd.set_option('expand_frame_repr', False)
 pd.set_option('display.max_columns', 999)
-
 
 config = json.loads(open('.credentials.json').read())
 
@@ -52,6 +53,12 @@ def iso_to_string(date: str):
   return date.strftime('%m/%d/%Y, %H:%M:%S')
 
 
+def convert_utc_local(utc_time):
+  time = datetime.datetime.strptime(utc_time, '%Y-%m-%dT%H:%M:%S.%f%z')
+  local_time = time.astimezone(tz.tzlocal()).date()
+  return local_time
+
+
 def _sanitize_data(data: dict):
   original_price = data.get('price', '<unknown_price>') \
     .get('totalPrice', '<unknown_price>') \
@@ -74,7 +81,15 @@ def _sanitize_data(data: dict):
       start_date = prom3[0].get('startDate', '<unknown-date>')
       end_date = prom3[0].get('endDate', '<unknown-date>')
 
-    is_free = 'True' if original_price == discount_price else 'False'
+      _start_date = convert_utc_local(start_date)
+
+    # is_free = 'True' if original_price == discount_price else 'False'
+    if _start_date > datetime.date.today():
+      is_free = 'Coming Soonn..'
+    elif original_price == discount_price:
+      is_free = "True"
+    else:
+      is_free = "False"
 
     slug = data.get('productSlug', None)
     if slug is None:  # if slug is none look for offerMappings:
