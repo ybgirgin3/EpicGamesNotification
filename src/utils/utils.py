@@ -1,5 +1,5 @@
-import platform
 import os
+import platform
 import subprocess
 
 _os = platform.system().lower()

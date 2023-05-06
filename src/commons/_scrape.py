@@ -1,7 +1,4 @@
-import logging
-from pprint import pprint
-
-from apps.scrape.tasks import Scraper
+from src.apps.scrape.tasks import Scraper
 
 
 class _scrape():

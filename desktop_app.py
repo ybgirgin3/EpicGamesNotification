@@ -2,10 +2,10 @@ import logging
 
 import rumps
 
-from commons._mail import _mail
-from commons._save import _save
-from commons._scrape import _scrape
-from utils.utils import notify, open_file
+from src.commons._mail import _mail
+from src.commons._save import _save
+from src.commons._scrape import _scrape
+from src.utils.utils import notify, open_file
 
 # from apps.scrape.tasks import Scraper
 # from apps.mail.tasks import Mail
@@ -14,7 +14,6 @@ rumps.debug_mode(True)
 
 
 def _notification(_type: str, **kwargs: dict):
-  # subtitle = 'Data {"Saved" if _type = "save" else "Sent"}'
   subtitle = 'Process Done..'
 
   notify(

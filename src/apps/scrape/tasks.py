@@ -39,11 +39,7 @@ def _extract_to_memory(data: list[dict]):
   df = pd.DataFrame.from_dict(san)
   df.columns = [k for k, v in san[0].items()]
 
-  ret = df.sort_values(by='free?')
-
-  # if config.get('EXPORT', 0) == 1:
-  #  logging.debug('exporting as json')
-  #  df.to_json('scraper.output.json')
+  # ret = df.sort_values(by='free?')
 
   return ret
 
