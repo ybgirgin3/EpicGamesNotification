@@ -6,40 +6,37 @@ import time
 import json
 
 from dotenv import load_dotenv
+from pandas import DataFrame
 
 load_dotenv()
 
 
 class Mail:
-  config = json.loads(open('.credentials.json').read())
-  subject = "Free Epic Games Reminder"
-  message = "You weekly Epic Games Reminder Is Here;"
-  # email = MIMEMultipart("alternative")
-  smtp = smtplib.SMTP("smtp-mail.outlook.com", port=587)
+    config = json.loads(open(".credentials.json").read())
+    subject = "Free Epic Games Reminder"
+    message = "You weekly Epic Games Reminder Is Here;"
+    # email = MIMEMultipart("alternative")
+    smtp = smtplib.SMTP("smtp-mail.outlook.com", port=587)
 
-  logging.debug(
-    f"sender: {config['EMAIL']}, subject: {subject}, message: {message}")
+    logging.debug(f"sender: {config['EMAIL']}, subject: {subject}, message: {message}")
 
-  def send(self, data):
-    self.smtp.starttls()
-    self.smtp.login(self.config['EMAIL'], self.config['PASSWORD'])
-    self.email = self.create_html_body(data)
+    def send(self, data: DataFrame):
+        self.smtp.starttls()
+        self.smtp.login(self.config["EMAIL"], self.config["PASSWORD"])
+        self.email = self.create_html_body(data)
 
-    for rec in self.config['RECEIVERS']:
-      self.email["From"] = self.config['EMAIL']
-      self.email["To"] = rec
-      self.email["Subject"] = self.subject
+        for rec in self.config["RECEIVERS"]:
+            self.email["From"] = self.config["EMAIL"]
+            self.email["To"] = rec
+            self.email["Subject"] = self.subject
 
-      logging.info(f"mail sent, rec: {rec}")
-      self.smtp.sendmail(
-        self.config['EMAIL'],
-        rec,
-        self.email.as_string())
-      time.sleep(2)
-    self.smtp.quit()
+            logging.info(f"mail sent, rec: {rec}")
+            self.smtp.sendmail(self.config["EMAIL"], rec, self.email.as_string())
+            time.sleep(2)
+        self.smtp.quit()
 
-  def create_html_body(self, data):
-    body = f"""
+    def create_html_body(self, data: DataFrame):
+        body = f"""
             <html>
               <body>
                 <p>Hi!, How are you?<br>
@@ -57,4 +54,4 @@ class Mail:
             </html>
             """
 
-    return MIMEMultipart("alternative", None, [MIMEText(body, "html")])
+        return MIMEMultipart("alternative", None, [MIMEText(body, "html")])
