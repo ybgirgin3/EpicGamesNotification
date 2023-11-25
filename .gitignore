@@ -135,3 +135,4 @@ trash
 .DS_Store
 
 .credentials.json
+test/
