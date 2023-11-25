@@ -1,4 +1,4 @@
-from src.apps.scrape.tasks import Scraper
+from epicgamesnotification.apps.scrape.tasks import Scraper
 
 
 class _scrape:

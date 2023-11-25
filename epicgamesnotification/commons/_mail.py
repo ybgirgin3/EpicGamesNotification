@@ -1,4 +1,4 @@
-from src.apps.mail.tasks import Mail
+from epicgamesnotification.apps.mail.tasks import Mail
 
 
 class _mail:
