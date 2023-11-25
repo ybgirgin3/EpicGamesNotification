@@ -2,8 +2,8 @@ pandas==1.5.3
 python-dotenv==1.0.0
 python_dateutil==2.8.2
 requests==2.31.0
-rumps==0.4.0
 winotify==1.1.0
 
-# local
-customtkinter
+# for desktop apps 
+# customtkinter
+# rumps==0.4.0
