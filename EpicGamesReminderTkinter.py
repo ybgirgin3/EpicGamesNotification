@@ -3,8 +3,6 @@ from customtkinter import (
     CTkButton,
     CTkCheckBox,
     CTkOptionMenu,
-    CTkSlider,
-    CTkSwitch,
     StringVar,
 )
 from collections import namedtuple
@@ -87,7 +85,7 @@ class EpicGamesGUI:
         )
 
         # send mail or not
-        checkboxWidget = self.grid(
+        self.grid(
             self.checkbox(
                 self.DefinedCheckBox(
                     text="Send Mail?",
@@ -110,6 +108,7 @@ class EpicGamesGUI:
             self.DefinedGrid(4, 0, 10, 10),
         )
 
+    # *** WIDGET FACTORIES ***
     def button(self, button: DefinedButton) -> CTkButton:
         confirm_button = customtkinter.CTkButton(
             master=self.app, text=button.name, command=button.command
@@ -163,6 +162,7 @@ class EpicGamesGUI:
             row=_grid.row, column=_grid.column, padx=_grid.padx, pady=_grid.pady
         )
 
+    # *** WIDGET CALLBACKS ***
     @classmethod
     def _custom_button(cls):
         print("yoooo")
