@@ -12,13 +12,18 @@ load_dotenv()
 
 
 class Mail:
-    config = json.loads(open(".credentials.json").read())
+    # onfig = json.loads(open(".credentials.json").read())
     subject = "Free Epic Games Reminder"
     message = "You weekly Epic Games Reminder Is Here;"
     # email = MIMEMultipart("alternative")
     smtp = smtplib.SMTP("smtp-mail.outlook.com", port=587)
 
-    logging.debug(f"sender: {config['EMAIL']}, subject: {subject}, message: {message}")
+    def __init__(self, credentials_path: str) -> None:
+        self.config = json.loads(open(credentials_path).read())
+
+        logging.debug(
+            f"sender: {self.config['EMAIL']}, subject: {self.subject}, message: {self.message}"
+        )
 
     def send(self, data: DataFrame):
         self.smtp.starttls()

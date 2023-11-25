@@ -10,8 +10,6 @@ from dateutil import tz
 pd.set_option("expand_frame_repr", False)
 pd.set_option("display.max_columns", 999)
 
-config = json.loads(open(".credentials.json").read())
-
 
 class Scraper:
     url = "https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=TR&allowCountries=TR"
