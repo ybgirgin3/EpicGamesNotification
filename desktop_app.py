@@ -2,10 +2,10 @@ import logging
 
 import rumps
 
-from src.commons._mail import _mail
-from src.commons._save import _save
-from src.commons._scrape import _scrape
-from src.utils.utils import notify, open_file
+from epicgamesnotification.commons._mail import _mail
+from epicgamesnotification.commons._save import _save
+from epicgamesnotification.commons._scrape import _scrape
+from epicgamesnotification.utils.utils import notify, open_file
 
 # from apps.scrape.tasks import Scraper
 # from apps.mail.tasks import Mail
