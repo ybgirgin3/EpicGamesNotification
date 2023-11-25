@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "EpicGamesNotification"
-version = "0.0.2"
+version = "0.0.3"
 authors = [{ name = "Yusuf Berkay Girgin" }]
 description = 'Backend Service for EpicGamesNotification Apps'
 readme = "README.md"
