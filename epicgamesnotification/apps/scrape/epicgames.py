@@ -11,7 +11,7 @@ pd.set_option("expand_frame_repr", False)
 pd.set_option("display.max_columns", 999)
 
 
-class Scraper:
+class EpicGames:
     url = "https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions?locale=en-US&country=TR&allowCountries=TR"
     headers = {
         "accept": "application/json, text/plain, */*",
